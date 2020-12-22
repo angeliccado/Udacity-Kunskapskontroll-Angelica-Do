@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udacity</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/2bd419e51d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-container">
+    <header class="header-section">
+        <div class="header-container">
+            
+            <div class="logo-container">
+
+                <div class="logo">
+                    <svg height="30" viewBox="0 0 180 30" width="180">
+                    <g fill="none" fill-rule="evenodd">
+                        <path
+                                d="M57.6 17.239187c0 2.546698-2.085517 4.407747-4.965517 4.407747-2.88 0-4.965517-1.86105-4.965517-4.407747V7.835994H45.68276v9.501143c0 3.330298 2.88 6.170846 6.951723 6.170846 4.071724 0 6.951724-2.938498 6.951724-6.170846V7.835994H57.6v9.403193zm16.286897-9.403193h-5.36276v15.67199h5.36276c4.468965 0 7.547586-3.03645 7.547586-7.835996 0-4.701596-3.07862-7.835994-7.547586-7.835994zm-.19862 13.71299h-3.177932V9.794994h3.17793c3.376553 0 5.76 2.252847 5.76 5.876994 0 3.917998-2.482757 5.779046-5.76 5.876996zm43.49793.29385c-3.575172 0-5.95862-2.644648-5.95862-6.170846 0-3.526197 2.482758-6.072895 5.95862-6.072895 2.78069 0 4.468966 1.5672 4.468966 1.5672l.794483-1.3713s-1.787587-1.86105-5.46207-1.86105c-4.766896 0-7.746206 3.526198-7.746206 7.738045 0 4.309797 3.07862 7.933945 7.944827 7.933945 3.773793 0 5.66069-2.5467 5.66069-2.5467l-1.092414-1.175398c-.09931-.09795-1.588965 1.959-4.568276 1.959zm14.896553-14.00684h1.986206v15.67199h-1.986207zm10.924137 1.959h4.965517v13.71299h1.986207V9.794994h4.96552v-1.959H143.0069m30.587583 0l-4.766896 7.150344-4.866207-7.150347h-2.085518l5.95862 8.717546v6.954445h1.986208v-6.954444l5.85931-8.71754m-81.434482 0l-6.157242 15.67199h1.986207l1.688276-4.5057 6.45517-1.3713 2.18483 5.876998h1.986203l-6.05793-15.67199h-2.085518zm-1.886897 9.305242l2.97931-7.248294h.099315L97.92 16.063788l-5.56138 1.07745z"
+                                fill="#2E3D49"></path>
+                        <path
+                                d="M29 .5l1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885L24.0094 24.1l-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254C14.48289 29.545895 12.684682 30 11 30 6 30 0 26 0 18V6l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517C14.181726 23.872636 10 20.678703 10 14V2.2L2 7 0 6l10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368C19.625786 21.62159 20 19.997902 20 18V5l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438C23.648223 22.549217 28 20.813144 28 14V2.25L22 6l-2-1 8-5 1 .5z"
+                                fill="#02B3E4"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+           
+
+        <!-- Hamburger menu input-->
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<div class="logo-hamburger"> 
+    <svg height="30" viewBox="0 0 30 30" width="30">
+    <path
+            d="M29 .5l1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885L24.0094 24.1l-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254C14.48289 29.545895 12.684682 30 11 30 6 30 0 26 0 18V6l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517C14.181726 23.872636 10 20.678703 10 14V2.2L2 7 0 6l10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368C19.625786 21.62159 20 19.997902 20 18V5l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438C23.648223 22.549217 28 20.813144 28 14V2.25L22 6l-2-1 8-5 1 .5z"
+            fill="#02B3E4" fill-rule="evenodd"></path>
+    </svg>
+</div>
+</div>
+<nav class="navigation-container"> 
+        <!-- Hamburger menu END-->
+
+            <ul class="nav-menu-left">
+            <li class="nav-item">
+            <a href="#" class="nav-link">Programs</a>
+            <!-- Svg for Arrow Down -->
+            <svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12" xmlns="http://www.w3.org/2000/svg">
+                <path d="m105 46 5 5 5-5" fill="none" stroke="#96a0aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(-104 -45)"></path></svg>
+            </li>
+           
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link">Careers</a>
+                       <!-- Svg for Arrow Down -->
+                <svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m105 46 5 5 5-5" fill="none" stroke="#96a0aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(-104 -45)"></path></svg>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">For Enterprise</a>
+                    <!-- Svg for Arrow Down -->
+                    <svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m105 46 5 5 5-5" fill="none" stroke="#96a0aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(-104 -45)"></path></svg>
+                    </li>
+            <!-- Sign In & Get started btn -->        
+            </ul>
+            <ul class="nav-menu-right">
+                <li class="nav-item-right">
+                    <a href="#" class="sign-in">Sign In</a>
+                    </li>
+                <button class="nav-btn">Get Started</button>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+
+<!-- HERO SECTION-->
+<main>
+<!-- HERO LEFT COLUMN-->
+    <div class="hero-container">
+    <div class="hero-left-container">
+        <div class="hero-left-content">
+        <h1 class="hero-heading">Bootcamp Quality at 1/10 of the Cost</h1>
+        <p class="hero-text-top">Udacity is the world’s fastest, most efficient way to
+            master the skills tech companies want. 100% online, part-time &amp; self-paced.</p>
+        <button class="hero-btn">LEARN MORE</button>
+ 
+        <p class="hero-text-top">Industry leading programs built and recognized by top companies <br>worldwide.</p>
+<!-- HERO LOGO PART-->
+      
+<!-- HERO RIGHT COLUMN -->
+<div class="hero-logo">
+    <ul class="logo-list">
+        <li class="logo-item">
+        <img src="//www.udacity.com/assets/iridium/images/shared/partners/logo-white-google.svg" alt="Google"></li>
+        <li class="logo-item">
+        <img src="//www.udacity.com/assets/iridium/images/homepage/shared/partners-list/logo-white-aws.svg" alt="Amazon AWS"></li>
+        <li class="logo-item">
+            <img src="//www.udacity.com/assets/iridium/images/shared/partners/logo-white-att.svg" alt="AT&amp;T"></li>
+        <li class="logo-item">
+            <img src="//www.udacity.com/assets/iridium/images/homepage/shared/partners-list/logo-white-ibm.svg" alt="IBM"></li>
+        
+        <li class="logo-item">   
+        <img src="//www.udacity.com/assets/iridium/images/shared/partners/logo-white-lyft.svg" alt="lyft"></li>
+    </ul>
+</div>
+</div>
+</div>
+<!-- HERO RIGHT COLUMN -> TABLE -->
+<div class="hero-right-container">
+<div class="hero-right-content"> 
+<h2 class="hero-tabel-heading"> Only at Udacity: <strong>Job-Ready Skills</strong>
+</h2>
+<!-- TABLE -->
+<table class="skills-table">
+    <tr class="table-content">
+    <th> </th>
+    <th class="head-th blue-table"> Udacity</th>
+    <th class="head-th table-grey">Others</th>
+</tr>
+<tr class="table-content">
+    <td class="table-text">Learn by doing</td>
+    <td class="blue-table"><svg height="13px" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)"><g transform="translate(843.000000, 3671.000000)"><path d="M7.70710678,17.0930443 C7.31658249,16.7025201 6.68341751,16.7025201 6.29289322,17.0930443 C5.90236893,17.4835686 5.90236893,18.1167336 6.29289322,18.5072579 L13.4928932,25.7072579 C13.9529165,26.1672812 14.7227768,26.072507 15.0574929,25.5146469 L25.8574929,7.51464688 C26.1416411,7.04106662 25.988076,6.42680636 25.5144958,6.1426582 C25.0409155,5.85851004 24.4266552,6.01207511 24.1425071,6.48565537 L14.0014611,23.3873987 L7.70710678,17.0930443 Z"></path></g></g></g></svg></td>
+    <td class="table-grey">X</td> 
+</tr>
+<tr class= "table-content"> 
+    <td class="table-text">Practioner-level skills</td> 
+    <td class="blue-table"><svg height="13px" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)"><g transform="translate(843.000000, 3671.000000)"><path d="M7.70710678,17.0930443 C7.31658249,16.7025201 6.68341751,16.7025201 6.29289322,17.0930443 C5.90236893,17.4835686 5.90236893,18.1167336 6.29289322,18.5072579 L13.4928932,25.7072579 C13.9529165,26.1672812 14.7227768,26.072507 15.0574929,25.5146469 L25.8574929,7.51464688 C26.1416411,7.04106662 25.988076,6.42680636 25.5144958,6.1426582 C25.0409155,5.85851004 24.4266552,6.01207511 24.1425071,6.48565537 L14.0014611,23.3873987 L7.70710678,17.0930443 Z"></path></g></g></g></svg></td>
+    <td class="table-grey">X</td> 
+</tr>
+<tr class="table-content">
+    <td class="table-text">Job-focused content</td> 
+    <td class="blue-table"><svg height="13px" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)"><g transform="translate(843.000000, 3671.000000)"><path d="M7.70710678,17.0930443 C7.31658249,16.7025201 6.68341751,16.7025201 6.29289322,17.0930443 C5.90236893,17.4835686 5.90236893,18.1167336 6.29289322,18.5072579 L13.4928932,25.7072579 C13.9529165,26.1672812 14.7227768,26.072507 15.0574929,25.5146469 L25.8574929,7.51464688 C26.1416411,7.04106662 25.988076,6.42680636 25.5144958,6.1426582 C25.0409155,5.85851004 24.4266552,6.01207511 24.1425071,6.48565537 L14.0014611,23.3873987 L7.70710678,17.0930443 Z"></path></g></g></g></svg></td>
+    <td class="table-grey">X</td> 
+</tr>
+
+<tr class="table-content">
+    <td class="table-text"> Real human help</td> 
+    <td class="blue-table"><svg height="13px" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)"><g transform="translate(843.000000, 3671.000000)"><path d="M7.70710678,17.0930443 C7.31658249,16.7025201 6.68341751,16.7025201 6.29289322,17.0930443 C5.90236893,17.4835686 5.90236893,18.1167336 6.29289322,18.5072579 L13.4928932,25.7072579 C13.9529165,26.1672812 14.7227768,26.072507 15.0574929,25.5146469 L25.8574929,7.51464688 C26.1416411,7.04106662 25.988076,6.42680636 25.5144958,6.1426582 C25.0409155,5.85851004 24.4266552,6.01207511 24.1425071,6.48565537 L14.0014611,23.3873987 L7.70710678,17.0930443 Z"></path></g></g></g></svg></td>
+    <td class="table-grey">X</td> 
+</tr>
+
+<tr class="table-content">
+    <td class="table-text">Personalized code reviews</td> 
+    <td class="blue-table"><svg height="13px" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)"><g transform="translate(843.000000, 3671.000000)"><path d="M7.70710678,17.0930443 C7.31658249,16.7025201 6.68341751,16.7025201 6.29289322,17.0930443 C5.90236893,17.4835686 5.90236893,18.1167336 6.29289322,18.5072579 L13.4928932,25.7072579 C13.9529165,26.1672812 14.7227768,26.072507 15.0574929,25.5146469 L25.8574929,7.51464688 C26.1416411,7.04106662 25.988076,6.42680636 25.5144958,6.1426582 C25.0409155,5.85851004 24.4266552,6.01207511 24.1425071,6.48565537 L14.0014611,23.3873987 L7.70710678,17.0930443 Z"></path></g></g></g></svg></td>
+    <td class="table-grey">X</td> 
+</tr>
+<tr class="table-content">
+    <td class="table-text">Real-life projects</td>  <td class="blue-table"><svg height="13px" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)"><g transform="translate(843.000000, 3671.000000)"><path d="M7.70710678,17.0930443 C7.31658249,16.7025201 6.68341751,16.7025201 6.29289322,17.0930443 C5.90236893,17.4835686 5.90236893,18.1167336 6.29289322,18.5072579 L13.4928932,25.7072579 C13.9529165,26.1672812 14.7227768,26.072507 15.0574929,25.5146469 L25.8574929,7.51464688 C26.1416411,7.04106662 25.988076,6.42680636 25.5144958,6.1426582 C25.0409155,5.85851004 24.4266552,6.01207511 24.1425071,6.48565537 L14.0014611,23.3873987 L7.70710678,17.0930443 Z"></path></g></g></g></svg></td>
+    <td class="table-grey">X</td> 
+</tr>
+</table>
+<!-- TABEL END -->
+</div>
+</div>
+</div>
+<!-- EXPLORE SECTION-->
+<section class="explr-section">
+<div class="explr-container">
+<div class="explr-content">
+    <h2 class="explr-heading">Explore our schools to find your perfect program</h2>
+<!-- VERTICAL MENU-->
+<div class="explr-vertical-menu">
+    <ul class="explr-nav-list">
+        <li class="explr-nav-item">Data Science</li>
+        <li class="explr-nav-item">Programming</li>
+        <li class="explr-nav-item">Artificial intelligence</li>
+        <li class="explr-nav-item">Business</li>
+        <li class="explr-nav-item">Autonomous Vehicles</li>
+        <li class="explr-nav-item">Cloud Computing</li>
+    </ul>
+</div>
+<!-- EXPLR-CARDS START-->
+<div class="explr-cards-container">
+<div class="explr-card-item">
+    <div class="explr-card-lable">New</div>
+    <img class="card-img" src= https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/4zEEr4FUkSQ7U1UgVPPCHB/d4c2b2a0df97251f8c64a4e1b248f313/data_engineer_catalog_image.jpg alt="Data engineer">
+    <div class="card-text">
+        <h2 class="card-head">Data Engineer</h2>
+        <div class="rating-text">
+        <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>4.5 (731)   Indermediate</p>
+        <p class="time-text">Estimated Time</p>
+        <p>5 months at 5-10hrs/week</p>
+    </div>
+    </div>
+</div>
+<div class="explr-card-item">
+    <div class="explr-card-lable">New</div>
+    <img class="card-img" src= https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/4zEEr4FUkSQ7U1UgVPPCHB/d4c2b2a0df97251f8c64a4e1b248f313/data_engineer_catalog_image.jpg alt="Data engineer">
+    <div class="card-text">
+        <h2 class="card-head">Data Engineer</h2>
+        <div class="rating-text">
+        <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>4.5 (731)   Indermediate</p>
+        <p class="time-text">Estimated Time</p>
+        <p>5 months at 5-10hrs/week</p>
+    </div>
+    </div>
+</div>
+<div class="explr-card-item">
+    <div class="explr-card-lable">New</div>
+    <img class="card-img" src= https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/4zEEr4FUkSQ7U1UgVPPCHB/d4c2b2a0df97251f8c64a4e1b248f313/data_engineer_catalog_image.jpg alt="Data engineer">
+    <div class="card-text">
+        <h2 class="card-head">Data Engineer</h2>
+        <div class="rating-text">
+        <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>4.5 (731)   Indermediate</p>
+        <p class="time-text">Estimated Time</p>
+        <p>5 months at 5-10hrs/week</p>
+    </div>
+    </div>
+</div>
+<div class="explr-card-item">
+    <div class="explr-card-lable blue">Popular</div>
+    <img class="card-img" src= https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/4zEEr4FUkSQ7U1UgVPPCHB/d4c2b2a0df97251f8c64a4e1b248f313/data_engineer_catalog_image.jpg alt="Data engineer">
+    <div class="card-text">
+        <h2 class="card-head">Data Engineer</h2>
+        <div class="rating-text">
+        <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>4.5 (731)   Indermediate</p>
+        <p class="time-text">Estimated Time</p>
+        <p>5 months at 5-10hrs/week</p>
+    </div>
+    </div>
+</div>
+<div class="explr-card-item">
+    <div class="explr-card-lable blue">Popular</div>
+    <img class="card-img" src= https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/4zEEr4FUkSQ7U1UgVPPCHB/d4c2b2a0df97251f8c64a4e1b248f313/data_engineer_catalog_image.jpg alt="Data engineer">
+    <div class="card-text">
+        <h2 class="card-head">Data Engineer</h2>
+        <div class="rating-text">
+        <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>4.5 (731)   Indermediate</p>
+        <p class="time-text">Estimated Time</p>
+        <p>5 months at 5-10hrs/week</p>
+    </div>
+    </div>
+</div>
+</div>
+<!-- CARDS END-->
+</div>
+</div>
+</section>
+<!-- DON'T WASTE SECTION-->
+<section class="waste-cards-section">
+    <h2 class="waste-cards-heading">Don't waste your valuable time or money</h2>
+    <h3>Only Udacity has all the critical factors to deliver real results</h3>
+    <div class="waste-cards-container">
+<!-- CARDS -->
+        <div class="waste-cards">
+          
+              <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/6pk4riNMII7w6COla8glF4/8c8655c3e7f185537eec5ee9ed118e83/EmployeableSkills__1_.svg" class="img_position" alt="briefcase icon"> 
+              <h3>Get real employable skills</h3>
+                <p>Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.</p>
+           
+        </div>
+        <div class="waste-cards">
+            
+              <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/6pk4riNMII7w6COla8glF4/8c8655c3e7f185537eec5ee9ed118e83/EmployeableSkills__1_.svg" class="img_position" alt="briefcase icon"> 
+              <h3>Project-based, active learning</h3>
+                <p>Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.</p>
+            
+        </div>
+            <div class="waste-cards">
+               
+                  <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/6pk4riNMII7w6COla8glF4/8c8655c3e7f185537eec5ee9ed118e83/EmployeableSkills__1_.svg" class="img_position" alt="briefcase icon"> 
+                  <h3>Learn on your schedule</h3>
+                    <p>Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.</p>
+                
+            </div>
+            <div class="waste-cards">
+                  <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/6pk4riNMII7w6COla8glF4/8c8655c3e7f185537eec5ee9ed118e83/EmployeableSkills__1_.svg" class="img_position" alt="briefcase icon"> 
+                  <h3>The help you need, when you need it</h3>
+                    <p>Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.</p>
+            </div>
+   
+</section>
+<!-- SECTION EXPLR RESOURCES-->
+<section class="resc-section">
+    <div class="resc-container">
+    <div class="resc-content">
+        <h2>Make the most of your online learning experience</h2>
+        <p>Our Online Learning Resource Center has tips, tricks and inspiring stories to help you learn while staying home.</p>
+        <button class="resc-btn">Explore resources</button>
+    </div>
+    </div>
+</section>
+<!-- NUMBERS SECTION-->
+<section class="numbs-section">
+<div class="numbs-container">
+<!-- NUMBERS TOP SECTION -->
+<div class="numbs-top-container">
+    <h2 class="numbs-heading">Strength in numbers</h2>
+    <ul class="numbs-icon-list">
+        <li class="numbs-icon-item">
+               <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/1I5Q4ulQdaV2Cd2RxJG1NF/9012118676e481a058bbbc1951c953c1/degree-hat.svg" class="feature-img" alt="Udacity graduations and counting">
+             <h2>100,000+</h2>
+             <p>Udacity graduations and counting</p>
+       </li>
+       <li class="numbs-icon-item">
+            <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/58pro2AvCh9F0M3GQQ2cGB/683daf82b944e4c342f3e4f3eca22e3b/star_copy.svg" class="feature-img" alt="Industry experts partnering to build our content">
+           <h2>200+</h2>
+           <p>Industry experts partnering to build our content</p>
+       </li>
+           <li class="numbs-icon-item">
+           <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/8E5HTugHBjVRYb0NxgSYB/54acb70c22932686ba6b2509b401c91d/star_copy_2.svg" class="feature-img" alt="Enterprise customers world-wide">
+           <h2>100+</h2>
+           <p>Enterprise customers world-wide</p>
+       </li>
+   </ul>
+</div>
+   <!-- NUMBS BOTTOM SECTION-->
+<div class="numbs-bottom-container">
+    <div class="stories-card-item stories-one">
+        <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2hJTmqhPe2T5zPCSVC3waq/533fc738cb83f2baf5aa75ca3ae77161/Jesse.png" alt="Jesse">
+        <h2>Jesse</h2>
+        <p>"The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners. It helped me achieve my career transition goal."</p>
+       <div class="card-footer">
+        <h3>Now at</h3>
+        <p>Raytheon | Data Scientist</p>
+    </div>
+    </div>
+    <div class="stories-card-item stories-two">
+        <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2hJTmqhPe2T5zPCSVC3waq/533fc738cb83f2baf5aa75ca3ae77161/Jesse.png" alt="Jesse">
+        <h2>Jesse</h2>
+        <p>"The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners. It helped me achieve my career transition goal."</p>
+       <div class="card-footer">
+        <h3>Now at</h3>
+        <p>Raytheon | Data Scientist</p>
+    </div>
+    </div>
+
+    <div class="stories-card-item stories-three">
+        <img src="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2hJTmqhPe2T5zPCSVC3waq/533fc738cb83f2baf5aa75ca3ae77161/Jesse.png" alt="Jesse">
+        <h2>Jesse</h2>
+        <p>"The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners. It helped me achieve my career transition goal."</p>
+       <div class="card-footer">
+        <h3>Now at</h3>
+        <p>Raytheon | Data Scientist</p>
+    </div>
+</div> 
+</div>
+<button class="success-btn">More success stories</button>
+</div>
+</div>
+</section>
+</div> <!-- MAIN CONTAINER-->
+</main>
+<!-- FOOTER-->
+<footer>
+<div class="footer-container">
+    <div class="footer-logo">
+        <svg height="30" viewBox="0 0 30 30" width="30">
+        <path
+                d="M29 .5l1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885L24.0094 24.1l-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254C14.48289 29.545895 12.684682 30 11 30 6 30 0 26 0 18V6l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517C14.181726 23.872636 10 20.678703 10 14V2.2L2 7 0 6l10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368C19.625786 21.62159 20 19.997902 20 18V5l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438C23.648223 22.549217 28 20.813144 28 14V2.25L22 6l-2-1 8-5 1 .5z"
+                fill="#02B3E4" fill-rule="evenodd"></path>
+        </svg>
+    </div>
+<nav class="footer-nav">
+<div class="footer-nav-container">
+<div class="footer-nav-list-container">
+<h3>Featured programs</h3>
+<ul class="footer-nav-list"> 
+<li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+<li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+<li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+<li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+<li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+<li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+<li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+<li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+<li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+<li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+<li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+<li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+<li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+<li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+<li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+<li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+</ul>
+</div>
+<div class="footer-nav-list-container">
+    <h3>Only at Udacity</h3>
+    <ul class="footer-nav-list"> 
+    <li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+    <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+    <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+    <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+    <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+    <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+    <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+
+    </ul>
+    </div>
+    <div class="footer-nav-list-container">
+        <h3>Udacity schools</h3>
+        <ul class="footer-nav-list"> 
+        <li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+        <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+        <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+        <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+        <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+        <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+        <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+        </ul>
+        </div>
+        <div class="footer-nav-list-container">
+            <h3>Resources</h3>
+            <ul class="footer-nav-list"> 
+            <li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+            <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+            <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+            <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+            <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+            <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+            <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+            
+        </ul>
+            </div>
+            <div class="footer-nav-list-container">
+                <h3>Company</h3>
+                <ul class="footer-nav-list"> 
+                <li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+                <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+                <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+                <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+                <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+                <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+                </ul>
+                </div>
+                <div class="footer-nav-list-container">
+                    <h3>Enterprise</h3>
+                    <ul class="footer-nav-list"> 
+                    <li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+                    <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+                    <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+                    <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+                    <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+                    <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+                    </ul>
+                    </div>
+                <div class="footer-nav-list-container">
+                    <h3>Support</h3>
+                    <ul class="footer-nav-list"> 
+                    <li class="footer-nav-item"><a href="#">Developer for Microsoft Azure</a></li>
+                    <li class="footer-nav-item"><a href="#">RPA Developer with UiPath</a></li>
+                    <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+                    <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+                    <li class="footer-nav-item"><a href="#">Agile Software Development</a></li>
+                    <li class="footer-nav-item"><a href="#">Data Science for Business Leaders</a></li>
+                    </ul>
+                    </div>
+</div>
+</nav>
+</div> <!--Footer container-->
+
+</footer>
+
+</body>
+</html>
